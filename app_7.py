@@ -167,7 +167,7 @@ def main():
         st.write('## Proporção de aceite')
 
         # PLOTS
-        fig, ax = plt.subplots(1, 2, figsize=(6, 3))
+        fig, ax = plt.subplots(1, 2, figsize=(16, 6))
 
         if graph_type == 'Barras':
             sns.barplot(x=bank_raw_target_perc.index, y='y', data=bank_raw_target_perc, ax=ax[0])
@@ -191,6 +191,7 @@ def main():
 if __name__ == '__main__':
     main()
     
+
 
 
 
